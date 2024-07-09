@@ -18,7 +18,7 @@ namespace TestShapes
             Circle circ = new Circle();
             double x = 7.0;
             double expectedValue = 153.938;
-            double actualValue = circ.area(x);
+            double actualValue = Math.Round(circ.area(x),3);
             ClassicAssert.AreEqual(expectedValue, actualValue);
         }
 
@@ -27,8 +27,8 @@ namespace TestShapes
         {
             Circle circ = new Circle();
             double x = 9.0;
-            double expectedValue = 56.5487;
-            double actualValue = circ.perimeter(x);
+            double expectedValue = 56.549;
+            double actualValue = Math.Round(circ.perimeter(x),3);
             ClassicAssert.AreEqual(expectedValue, actualValue);
         }
 
@@ -64,7 +64,7 @@ namespace TestShapes
             double y = 7;
             double z = 9;
             double expectedValue = 13.416;
-            double actualValue = tri.area(x, y, z);
+            double actualValue = Math.Round(tri.area(x, y, z),3);
             ClassicAssert.AreEqual(expectedValue, actualValue);
         }
 
